@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6Y1N8EGX6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-D6Y1N8EGX6');
+	</script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+	<link rel="icon" href="assets/images/logo.jfif" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<title>MINERAL DROP</title>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="content">
+			<div class="logo">
+				<a href="index.html"><img src="assets/images/logo.jfif" alt="Mineral Drop Logo" id="logo" /><strong><span style="color: #2980b9;"></span>Mineral Drop </strong>| Healthy Water. Safe Life</a>
+			</div>
+			<ul class="menu-list">
+				<div class="icon cancel-btn">
+					<i class="fas fa-times"></i>
+				</div>
+				<li><a class="homeBtn" href="#home">Home</a></li>
+				<li><a class="aboutBtn" href="#about">About</a></li>
+				<li><a class="productsBtn" href="#products">Products</a></li>
+				<li><a class="teamBtn" href="#team">Team</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button"
+						data-toggle="dropdown">More
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="Products.html">Products</a>
+						<a class="dropdown-item" href="about-us.html">About Us</a>
+						<a class="dropdown-item" href="blog.html">Blog</a>
+						<a class="dropdown-item" href="faq.html">FAQs</a>
+						<a class="dropdown-item" href="gallery.html">Gallery</a>
+					</div>
+				</li>
+			</ul>
+			<div class="icon menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+	<div id="home">
+		<section class="home-hero-stack">
+			<div class="hhs--video-wrap">
+				<div class="hhs--video-cell"><video src="assets/videos/intro.m4v" video="" autoplay="" muted="" loop=""
+						infinite="" playsinline="" poster="assets/images/img1.jpg"></video></div>
+			</div>
+			<div class="hhs--text-wrap">
+				<h1>Perfect Drinking water Created from
+					<!--<div class="our-water">
+						<div class="para">
+							<div class="animated-text">
+								<div class="text">Nature</div>
+								<div class="text">Innovation</div>
+								<div class="text">Technology</div>
+								<div class="text">Love</div>
+								<div class="text">Trust</div>
+								<div class="text">Quality</div>
+								<div class="text">Love</div>
+								<div class="text">Innovation</div>
+								<div class="text">Nature</div>
+								<div class="text">Technology</div>
+								
+							</div>
+						</div>-->
+					<div class="typewriter-text">
+						<h1>
+							<span class="txt-rotate" data-period="1000"
+								data-rotate='[ "Nature", "Innovation", "Technology", "Love", "Trust","Quality" ]'></span>
+						</h1>
+					</div>
+					<script>
+						var TxtRotate = function (el, toRotate, period) {
+							this.toRotate = toRotate;
+							this.el = el;
+							this.loopNum = 0;
+							this.period = parseInt(period, 10) || 2000;
+							this.txt = '';
+							this.tick();
+							this.isDeleting = false;
+						};
+
+						TxtRotate.prototype.tick = function () {
+							var i = this.loopNum % this.toRotate.length;
+							var fullTxt = this.toRotate[i];
+
+							if (this.isDeleting) {
+								this.txt = fullTxt.substring(0, this.txt.length - 1);
+							} else {
+								this.txt = fullTxt.substring(0, this.txt.length + 1);
+							}
+
+							this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+							var that = this;
+							var delta = 300 - Math.random() * 100;
+
+							if (this.isDeleting) { delta /= 2; }
+
+							if (!this.isDeleting && this.txt === fullTxt) {
+								delta = this.period;
+								this.isDeleting = true;
+							} else if (this.isDeleting && this.txt === '') {
+								this.isDeleting = false;
+								this.loopNum++;
+								delta = 500;
+							}
+
+							setTimeout(function () {
+								that.tick();
+							}, delta);
+						};
+
+						window.onload = function () {
+							var elements = document.getElementsByClassName('txt-rotate');
+							for (var i = 0; i < elements.length; i++) {
+								var toRotate = elements[i].getAttribute('data-rotate');
+								var period = elements[i].getAttribute('data-period');
+								if (toRotate) {
+									new TxtRotate(elements[i], JSON.parse(toRotate), period);
+								}
+							}
+							// INJECT CSS
+							var css = document.createElement("style");
+							css.type = "text/css";
+							css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+							document.body.appendChild(css);
+						};
+
+					</script>
+			</div>
+			</h1>
+	</div>
+	<div class="section-down-arrow">
+		<a href="#home-intro">
+			<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M39.1286 19.405L20.1797 38.3539L1.23079 19.405" stroke="white" stroke-width="3">
+				</path>
+			</svg>
+		</a></div>
+	</section>
+
+
+	<!--<div id="slider">
+			<div id="headerSlider" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+				<ol class="carousel-indicators">
+					<li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+					<li data-target="#headerSlider" data-slide-to="1"></li>
+					<li data-target="#headerSlider" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" id="cor1">
+						<img src="assets/images/img1.jpg" alt="carousel images here" id="gradimg"
+							class="d-block img-fluid" />
+					</div>
+					<div class="carousel-item" id="cor2">
+						<img src="assets/images/img2.jpg" alt="carousel images here" id="stdimg"
+							class="d-block img-fluid" />
+					</div>
+					<div class="carousel-item" id="cor3">
+						<img src="assets/images/img3.jpg" alt="carousel images here" id="myimg"
+							class="d-block img-fluid" />
+					</div>
+				</div>
+
+				<h3 id="ourname" class="display-4">
+					<span class="fash">MINERAL DR</span>O<span class="fash">P</span>
+				</h3>
+				<h6 id="ourtagline">Healthy Water. Safe Life.</h6>
+
+				<a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>-->
+	<section id="home-intro" class="home-intro">
+		<div class="container">
+			<h4>The World’s first Innovative,Natural,Clean,Safe,Pure
+				<br> and Healthy drinking water technology for your Entire needs.</h4>
+		</div>
+	</section>
+	<div class="container water-glass">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="video-wrap home-glass--wrap">
+					<video src="assets/videos/water-glass.mp4" autoplay="" poster="assets/images/water-glass-sample.jpg"
+						loop="" muted=""></video>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+				<h5><br><br><br><br>
+					Clean, Safe, and pure water made entirely off grid anywhere in the world
+					Perfect drinking water for your - 
+					<div class="our-water">
+						<div class="para">
+							<div class="animated-text">
+								<div class="text">Business</div>
+								<div class="text">Community</div>
+								<div class="text">Hotel</div>
+								<div class="text">worksite</div>
+								<div class="text">school</div>
+								<div class="text">house</div>
+								<div class="text">office</div>
+								<div class="text">Innovation</div>
+								<div class="text">Personal Use</div>
+							</div>
+						</div>
+					</div>
+				</h5>
+			</div>
+		</div>
+	</div>
+			<section id="about">
+				<hr>
+				<div class="container">
+				<h1>About Us</h1>
+				<div class="row">
+					<div class="col-lg-8 col-sm-8 col-xs-12 col-md-8">
+						<p>Mineral Drop is Next-Generation Smart water Purification Technology Company which Aims to
+							Candle each home with every drop of pure water. Our goals has always been to give you
+							wonderful products equipped with the latest technology that bring out the best in you.</p>
+							<a href="about-us.html"><button type="button" class="btn btn-outline-primary">Know More</button></a>
+					</div>
+					<div class="col-lg-4 col-sm-4 col-xs-12 col-md-4">
+						<img class="img-fluid" src="assets/images/img4.jpg" alt="water splash">
+					</div>
+				</div>
+			</section>
+			<section id="why-us">
+				<div class="container">
+					<h1>Why Us</h1>
+					<hr />
+					<div class="row">
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center why-us-text">
+							<p>
+								The World’s first Innovative, Natural, Clean, Safe,
+								pure and healthy drinking water technology for your
+								Entire needs Clean, Safe, and pure water made entirely
+								off grid anywhere in the world ..<br />
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center why-us-image">
+							<!--<img class="img-fluid" src="assets/images/water-drop (1).png" width="50%" />-->
+							<img src="assets/images/water.gif" width="50%" />
+						</div>
+					</div>
+					<div class="row">
+						<div
+							class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 why-us-text">
+							<p>
+								Perfect Drinking water Created from Nature,
+								Innovation, technology, Love, Trust, Quality.Perfect
+								drinking water for your personal use, Business,
+								Community, Hotel, worksite, school, house, office..<br /><br />
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center why-us-image">
+							<img src="assets/images/water.gif" width="50%" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center why-us-text">
+							<p>
+								Innovation : <br>
+								Unmatched Quality,
+								Purity,<br>
+								Adaptation with Latest Technology,<br>
+								Research and Development,
+								Ecosystem Growth, <br />
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center why-us-image">
+							<img src="assets/images/water.gif" width="50%" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="products">
+				<div class="container">
+					<h1 class="display-4">Products&nbsp;</h1>
+					<hr />
+					<div class="row">
+						<div class="col-sm-12 col-md-4  col-lg-4 features">
+							<img width="100%" src="assets/images/water-purifier.png" alt="water-purifier" />
+							<br /><button class="btn btn-outline-primary">
+								Know More
+							</button>
+							<button class="btn btn-outline-primary">BUY NOW</button><br /><br />
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 features">
+							<img width="100%" src="assets/images/water-purifier.png" alt="water-purifier" />
+							<br /><button class="btn btn-outline-primary">
+								Know More
+							</button>
+							<button class="btn btn-outline-primary">BUY NOW</button><br /><br />
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 features">
+							<img width="100%" src="assets/images/water-purifier.png" alt="water-purifier" />
+							<br /><button class="btn btn-outline-primary">
+								Know More
+							</button>
+							<button class="btn btn-outline-primary">BUY NOW</button><br /><br />
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!--<section id="services">
+				<section id="awards">
+					<div class="container">
+						<div class="container-flex"></div>
+						<h1 class="display-4"></h1>
+						<div class="accordion" id="accordionExample">
+							<h2 class="mb-0">
+								<button class="btn btn-lg btn-outline-dark btn-block text-center" type="button"
+									data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+									aria-controls="collapseOne">
+									Awards <i class="fas fa-chevron-down ml-3"></i>
+								</button>
+							</h2>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+								data-parent="#accordionExample">
+								<div class="row">
+									<div class="images">
+										<div class="row">
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 award-img">
+												<img class="image-flex" src="assets/images/award.jpeg" alt="Awards">
+												<h5>FICCI ECAFE Young Entrepreneur Award</h5>
+											</div>
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 award-img">
+												<img class="image-flex" src="assets/images/award2.jpeg" alt="Awards">
+												<h5>Sakal Young Inspiration Award</h5>
+											</div>
+										</div>
+										<div class="row">
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 award-img">
+												<img class="image-flex" src="assets/images/award3.jpeg" alt="Awards">
+												<h5>Google Startup Weekend Award</h5>
+											</div>
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 award-img">
+												<img class="image-flex" src="assets/images/award4.jpeg" alt="Awards">
+												<h5>Best Startup Initiative Award</h5>
+
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-0 col-md-2 col-lg-3"></div>
+											<div
+												class="col-sm-12 col-md-8 col-lg-6 d-flex flex-column justify-content-center odd-img">
+												<img class="image-flex" src="assets/images/award1.jpeg" alt="Awards"
+													style="padding: 50px;">
+												<h5>World Peace Centre Award</h5>
+											</div>
+											<div class="col-sm-0 col-md-2 col-lg-3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h2 class="mt-2">
+							<button class="btn btn-lg btn-outline-dark btn-block text-center collapsed" type="button"
+								data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+								aria-controls="collapseTwo">
+								News <i class="fas fa-chevron-down ml-3"></i>
+							</button>
+						</h2>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordionExample">
+							<div class="row">
+								<div id="news">
+									<div class="images">
+										<div class="row">
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 why-us-text">
+												<a href="https://www.esakal.com/vidarbha/nadeem-made-water-filter-only-ten-rupees-257575"
+													target="_blank"><img src="assets/images/news.jpeg" alt="Awards">
+													<h5>FICCI ECAFE Young Entrepreneur Award</h5>
+												</a>
+											</div>
+											<div
+												class="col-sm-12 col-md-6 d-flex flex-column justify-content-center order-md-2 why-us-text">
+												<a href="https://www.tv9marathi.com/maharashtra/nagpur-boy-research-new-water-filter-183817.html"
+													target="_blank" style="padding: 2%;"><img
+														src="assets/images/award2.jpeg" alt="Awards">
+													<h5>Sakal Young Inspiration Award</h5>
+												</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<h2 class="mt-2">
+							<button class="btn btn-lg btn-outline-dark btn-block text-center collapsed" type="button"
+								data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+								aria-controls="collapseThree">
+								Clients <i class="fas fa-chevron-down ml-3"></i>
+							</button>
+						</h2>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="row">
+								<div class="col-sm-12 col-md-6 features">
+									<i class="fas fa-handshake"></i>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+										unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting,
+									</p>
+								</div>
+								<div class="col-sm-12 col-md-6 features">
+									<i class="fas fa-map-marker-alt"></i>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+										unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting,
+								</div>
+							</div>
+						</div>
+						<h2 class="mt-2">
+							<button class="btn btn-lg btn-outline-dark btn-block text-center collapsed" type="button"
+								data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+								aria-controls="collapseFour">
+								Our Customer Stories <i class="fas fa-chevron-down ml-3"></i>
+							</button>
+						</h2>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="row">
+								<div class="col-sm-12 col-md-6 features">
+									<i class="fas fa-handshake"></i>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+										unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting,
+								</div>
+								<div class="col-sm-12 col-md-6 features">
+									<i class="fas fa-map-marker-alt"></i>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+										unknown printer took a galley of type and scrambled it to make a type specimen
+										book. It has survived not only five centuries, but also the leap into electronic
+										typesetting,
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+	</section>
+	</section>-->
+			<section id="team">
+				<div class="container">
+					<div class="row">
+						<div class="row mt-5">
+							<div class="col-lg-10 col-md-8 col-sm-8 col-xs-8">
+								<h4>Certifications:</h4>
+								<h5>ISO</h5>
+								<p>The International Organization for Standardization is an international
+									standard-setting
+									body
+									composed of representatives from various national standards organizations. Founded
+									on 23
+									February 1947, the organization promotes worldwide proprietary, industrial, and
+									commercial
+									standards.</p>
+								<br>
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 cert-logo">
+								<img src="assets/images/iso.png" alt="iso png">
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 cert-logo">
+								<img src="assets/images/NABL.png" alt="iso png">
+							</div>
+							<div class="col-lg-10 col-md-8 col-sm-8 col-xs-8">
+								<h5>NABL</h5>
+								<p>
+									National Accreditation Board for Testing and Calibration Laboratories (NABL) is a
+									Constituent Board of Quality Council of India. ... NABL accreditation system
+									complies
+									with
+									ISO/IEC 17011:2004 and Asia Pacific Accreditation Cooperation (APAC) MR001.
+								</p><br>
+							</div>
+							<div class="col-lg-10 col-md-8 col-sm-8 col-xs-8">
+								<h5>MOEFCC</h5>
+								<p>
+									The Ministry of Environment, Forest and Climate Change is an Indian government
+									ministry.
+									The
+									ministry portfolio is currently held by Prakash Javadekar, Union Minister of
+									Environment,
+									Forest and Climate Change
+								</p><br />
+							</div>
+							<div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 cert-logo">
+								<img src="assets/images/moefcc.png" alt="iso png">
+							</div>
+						</div>
+						</p>
+					</div>
+				</div>
+				<hr>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex align-items-center justify-content-center">
+							<div class="card">
+								<div class="card-body">
+									<h2 class="text-center">Our Team</h2>
+									<div class="carousel slide" data-ride="carousel" id="team-carousel">
+										<div class="carousel-inner" data-interval="1000">
+											<div class="carousel-item active" data-interval="2000">
+												<img class="rounded-circle img-fluid team-mem"
+													src="assets/images/img-needed" alt="founder img" />
+												<h4 class="card-title mt-3">Nadeem khan</h4>
+												<h6 class="text-muted card-subtitle mb-2">
+													Founder
+												</h6>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-facebook"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-twitter"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-linkedin"></i></a>
+											</div>
+											<div class="carousel-item" data-interval="2000">
+												<img class="rounded-circle img-fluid team-mem"
+													src="assets/images/img-needed" alt="co-founder img" />
+												<h4 class="card-title mt-3">Ashish rai</h4>
+												<h6 class="text-muted card-subtitle mb-2">
+													Co-founder
+												</h6>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-facebook"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-twitter"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-instagram"></i></a>
+												<a class="social-link" href="#" target="_blank"><i
+														class="fa fa-linkedin"></i></a>
+											</div>
+										</div>
+									</div>
+									<div>
+										<a class="carousel-control-prev" href="#team-carousel" role="button"
+											data-slide="prev"><span class="carousel-control-prev-icon"></span><span
+												class="sr-only">Previous</span></a><a class="carousel-control-next"
+											href="#team-carousel" role="button" data-slide="next"><span
+												class="carousel-control-next-icon"></span><span
+												class="sr-only">Next</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="contact-clean">
+								<form action="post" id="contact-us-form" class="pageclip-form" method="POST">
+									<h2 class="text-center">Help Us To Help You</h2>
+									<div class="form-group">
+										<input class="form-control" type="text" name="name" placeholder="Name"
+											required />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="tel" name="name" placeholder="Phone Number"
+											required />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="name" placeholder="City"
+											required />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="email" name="email" placeholder="Email"
+											required />
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" name="message" placeholder="Message" rows="14"
+											required></textarea>
+									</div>
+									<div class="form-group">
+										<button class="btn btn-block btn-primary pageclip-form__submit" type="submit">
+											<span>Send</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		</section>
+
+		<footer id="footer">
+			<!--experimental-->
+			<div class="header">
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+					<defs>
+						<path id="gentle-wave"
+							d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+					</defs>
+					<g class="parallax">
+						<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,105,148,0.7" />
+						<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(135,206,235,0.5)" />
+						<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,105,148,0.3)" />
+						<use xlink:href="#gentle-wave" x="48" y="7" fill="#006994" />
+					</g>
+				</svg>
+			</div>
+
+			<!--experimental end-->
+			<div class="footer-dark">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-sm-6 col-md-3 col-lg-4 d-flex flex-row justify-content-center align-items-start item">
+							<img class="img-fluid" id="footer-logo" src="assets/images/logo.jfif" />
+						</div>
+						<div class="col-sm-6 col-md-3 col-lg-3 item">
+							<h3>Contact</h3>
+							<ul>
+								<li class="contact-us-item">
+									Tel: 0712-2549848
+								</li>
+								<li class="contact-us-item">
+									Mobile: +91 7721949774
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-6 col-lg-5 item text">
+							<h3>Address</h3>
+							<p>
+								HEAD OFFICE
+								Mineral Drop International PVT.LTD.
+								Flat No. 104, 1 Floor Shri Apartment Behind Khare Town Post Office, Dharampeth,
+								Nagpur, Maharashtra, 440010
+							</p>
+							<p>
+								Email: contact@mineraldrop.in
+							</p>
+						</div>
+						<div class="col offset-md-0 item social">
+							<a href="https://www.instagram.com/mineraldroppurifier/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/in/mineral-drop-4222971b9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.facebook.com/MineralDropPurifier" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/Mineral_drop" target="_blank"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+					<p class="copyright">Mineral Drop © 2020</p>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/smooth-scroll.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			var scroll = new SmoothScroll('a[href*="#"]');
+		</script>
+	</div>
+	</div>
+</body>
+
+</html>
