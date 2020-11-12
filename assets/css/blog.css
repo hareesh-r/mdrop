@@ -369,3 +369,9 @@
 .contact-us-item {
 	opacity: 0.71;
 }
+@media (max-width: 880px) {
+	.dropdown-menu.show{
+		text-align: center;
+		margin-left: 50px;
+	}
+} 

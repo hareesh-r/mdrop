@@ -93,6 +93,16 @@ strong{
 	color: #2980b9;
 }
 
+@media (max-width: 880px) {
+	.dropdown-menu.show{
+		text-align: center;
+		margin-left: 50px;
+	}
+} 
+
+
+
+
 /*slider*/
 #slider {
 	width: 100%;
