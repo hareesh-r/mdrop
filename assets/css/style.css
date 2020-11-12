@@ -398,11 +398,13 @@ section.home-intro h4 {
 	border-radius: 5px;
 
 }
+.our-water .para{
+	padding: 10px;
+}
 
 .our-water .text {
 	text-transform: uppercase;
 	text-align: center;
-
 }
 
 .our-water .text:first-child {
@@ -442,7 +444,6 @@ section.home-intro h4 {
 
 .our-water h1{
 	padding: 0px;
-	top: -5px;
 	margin: 0%;
 }
 
