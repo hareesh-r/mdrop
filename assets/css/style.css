@@ -7,7 +7,8 @@
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 }
-strong{
+
+strong {
 	color: #2980b9;
 }
 
@@ -94,16 +95,17 @@ strong{
 }
 
 @media (max-width: 880px) {
-	.dropdown-menu.show{
+	.dropdown-menu.show {
 		text-align: center;
 		margin-left: 50px;
 	}
-} 
+}
 
 /*slider*/
 #slider {
 	width: 100%;
 }
+
 #ourname {
 	position: absolute;
 	color: rgb(22, 78, 182);
@@ -245,95 +247,112 @@ strong{
 		margin-left: 0px;
 	}
 }
-.dropdown-item{
+
+.dropdown-item {
 	left: -100px;
 }
+
 @media (max-width: 380px) {
 	.navbar .logo a {
 		font-size: 27px;
 	}
 }
+
 /*video*/
 section.home-hero-stack {
-    position: relative;
-    min-height: 100vh;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
 }
+
 .hhs--video-wrap {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
 }
-.dark-text{
+
+.dark-text {
 	font-weight: 1000;
 	font-size: 500;
 }
+
 .hhs--video-cell {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}.hhs--text-wrap {
-    position: absolute;
-    top: 48vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hhs--text-wrap {
+	position: absolute;
+	top: 48vh;
 	left: 0;
 	color: #fff;
 	width: 100%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-.section-down-arrow {
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-    width: 100%;
-    max-width: 4rem;
-    margin: 0 auto;
-    transform: translateX(-50%);
-    cursor: pointer;
-    animation: bounce 1.5s infinite alternate;
-}
-.section-down-arrow svg {
-    width: 100%;
-    display: block;
-    transition: all .25s ease;
-}
-svg:not(:root) {
-    overflow: hidden;
-}
-/*below video*/
-.typewriter-text h1{
-	padding: 0px;
-}
-section.home-intro {
-    padding: 6rem 0 0;
-    text-align: center;
-}
-section.home-intro h4 {
-    max-width: 60rem;
-    margin: 0 auto;
-    color: #262626;
-    line-height: 1.4em;
-}
-.home-intro .container:after {
-    clear: both;
-    content: '';
-    display: table;
+	transform: translateY(-50%);
+	z-index: 1;
 }
 
-.water-glass video{
+.section-down-arrow {
+	position: absolute;
+	bottom: 7%;
+	left: 50%;
+	width: 100%;
+	max-width: 4rem;
+	margin: 0 auto;
+	transform: translateX(-50%);
+	cursor: pointer;
+	animation: bounce 1.5s infinite alternate;
+}
+
+.section-down-arrow svg {
+	width: 100%;
+	display: block;
+	transition: all .25s ease;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/*below video*/
+.typewriter-text h1 {
+	padding: 0px;
+}
+
+section.home-intro {
+	padding: 6rem 0 0;
+	text-align: center;
+}
+
+section.home-intro h4 {
+	max-width: 60rem;
+	margin: 0 auto;
+	color: #262626;
+	line-height: 1.4em;
+}
+
+.home-intro .container:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.water-glass video {
 	max-height: 50vh;
 	text-align: center !important;
 }
-.water-glass h5{
+
+.water-glass h5 {
 	padding: 20px;
 }
+
 /* why us */
 
 #why-us {
@@ -397,7 +416,8 @@ section.home-intro h4 {
 	border-radius: 5px;
 
 }
-.our-water .para{
+
+.our-water .para {
 	padding: 10px;
 }
 
@@ -438,19 +458,22 @@ section.home-intro h4 {
 	100% {
 		margin-top: 0;
 	}
-}*/
+}
+
+*/
 /* our water */
 
-.our-water h1{
+.our-water h1 {
 	padding: 0px;
 	margin: 0%;
 }
 
 /* Why choose mineral drop styles */
-#products{
+#products {
 	background: #fff;
 	padding-bottom: 30px;
 }
+
 #services {
 	background: linear-gradient(360deg, #87ceeb, #006994 100%);
 	padding-bottom: 30px;
@@ -689,68 +712,79 @@ h1 {
 
 /*experimental*/
 .header {
-	position:relative;
-	text-align:center;
+	position: relative;
+	text-align: center;
 	background: linear-gradient(180deg, #fff 0%, #006994 100%);
-	color:white;
-  }
-.flex { /*Flexbox for containers*/
+	color: white;
+}
+
+.flex {
+	/*Flexbox for containers*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  }
-  
-  .waves {
-	position:relative;
+}
+
+.waves {
+	position: relative;
 	width: 100%;
-	height:15vh;
-	margin-bottom:-7px; /*Fix for safari gap*/
-	min-height:100px;
-	max-height:150px;
-  }
-  
-  /* Animation */
-  
-  .parallax > use {
-	animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
-  .parallax > use:nth-child(1) {
+	height: 15vh;
+	margin-bottom: -7px;
+	/*Fix for safari gap*/
+	min-height: 100px;
+	max-height: 150px;
+}
+
+/* Animation */
+
+.parallax>use {
+	animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
 	animation-delay: -2s;
 	animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
+}
+
+.parallax>use:nth-child(2) {
 	animation-delay: -3s;
 	animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
+}
+
+.parallax>use:nth-child(3) {
 	animation-delay: -4s;
 	animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
+}
+
+.parallax>use:nth-child(4) {
 	animation-delay: -5s;
 	animation-duration: 20s;
-  }
-  @keyframes move-forever {
+}
+
+@keyframes move-forever {
 	0% {
-	 transform: translate3d(-90px,0,0);
+		transform: translate3d(-90px, 0, 0);
 	}
-	100% { 
-	  transform: translate3d(85px,0,0);
+
+	100% {
+		transform: translate3d(85px, 0, 0);
 	}
-  }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
 	.waves {
-	  height:40px;
-	  min-height:40px;
+		height: 40px;
+		min-height: 40px;
 	}
-  }
+}
+
 /*experimental end*/
 .footer-dark {
 	padding: 50px 0;
-	color:#f0f9ff;
-	background-color:  #006994;
+	color: #f0f9ff;
+	background-color: #006994;
 }
 
 .footer-dark h3 {
@@ -849,11 +883,14 @@ h1 {
 .contact-us-item {
 	opacity: 0.71;
 }
-#team p,#team h5{
+
+#team p,
+#team h5 {
 	padding-left: 25px;
 	padding-right: 25px;
 }
-#team h4{
+
+#team h4 {
 	padding: 20px;
 }
 
@@ -864,37 +901,41 @@ h1 {
 	padding: 16px;
 	margin: 16px 0;
 	text-align: left;
-  }
-  
-  /* Clear floats after containers */
-  .testimonial .container::after {
+}
+
+/* Clear floats after containers */
+.testimonial .container::after {
 	content: "";
 	clear: both;
 	display: table;
-  }
-  
-  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-  .testimonial .container img {
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.testimonial .container img {
 	float: left;
 	margin-right: 20px;
 	border-radius: 50%;
-  }
-  
-  /* Increase the font-size of a span element */
-  .testimonial .container span {
+}
+
+/* Increase the font-size of a span element */
+.testimonial .container span {
 	font-size: 20px;
 	margin-right: 15px;
-  }
-  
-  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
-  @media (max-width: 500px) {
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
 	.testimonial .container {
-	  text-align: center;
+		text-align: center;
 	}
-  
+
 	.testimonial .container img {
-	  margin: auto;
-	  float: none;
-	  display: block;
+		margin: auto;
+		float: none;
+		display: block;
 	}
-  }
+}
+.story-box{
+	background: #fff;
+	border-radius: 10px;
+}
