@@ -78,7 +78,7 @@
 	color: #2980b9;
 }
 .row img {
-	padding: 25px;
+	padding: 0px;
 }
 
 @media (max-width: 766px) {
@@ -371,8 +371,8 @@
 }
 
 @media (max-width: 880px) {
-	.dropdown-menu.show{
+	.dropdown-menu.show {
 		text-align: center;
 		margin-left: 50px;
 	}
-} 
+}
