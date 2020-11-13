@@ -335,7 +335,6 @@ section.home-intro h4 {
 #why-us {
 	width: 100%;
 	height: 100%;
-	/*background: linear-gradient(360deg, #87ceeb, #006994 100%);*/
 	background: #fff;
 }
 
@@ -449,7 +448,6 @@ section.home-intro h4 {
 
 /* Why choose mineral drop styles */
 #products{
-	/*background: linear-gradient(180deg, #87ceeb, #006994 100%);*/
 	background: #fff;
 	padding-bottom: 30px;
 }
