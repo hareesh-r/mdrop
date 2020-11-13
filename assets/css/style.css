@@ -887,3 +887,44 @@ h1 {
 	padding: 20px;
 }
 
+.testimonial .container {
+	border: 2px solid #ccc;
+	background-color: #9ad6e6d8;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 16px 0;
+	text-align: left;
+  }
+  
+  /* Clear floats after containers */
+  .testimonial .container::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .testimonial .container img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .testimonial .container span {
+	font-size: 20px;
+	margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+	.testimonial .container {
+	  text-align: center;
+	}
+  
+	.testimonial .container img {
+	  margin: auto;
+	  float: none;
+	  display: block;
+	}
+  }
