@@ -269,6 +269,10 @@ section.home-hero-stack {
     height: 100%;
     z-index: 0;
 }
+.dark-text{
+	font-weight: 1000;
+	font-size: 500;
+}
 .hhs--video-cell {
     position: absolute;
     left: 0;
@@ -280,7 +284,7 @@ section.home-hero-stack {
     top: 48vh;
 	left: 0;
 	color: #fff;
-    width: 100%;
+	width: 100%;
     transform: translateY(-50%);
     z-index: 1;
 }
@@ -359,10 +363,6 @@ section.home-intro h4 {
 	padding: 0 50px;
 }
 
-.award-img img {
-	width: 50%;
-	max-height: 300px;
-}
 
 .odd-img img {
 	width: 100%;
@@ -499,34 +499,6 @@ h1 {
 	width: 100%;
 }
 
-/*awards*/
-#awards img,
-#news img {
-	width: 100%;
-	margin: 0%;
-}
-
-#awards .row,
-#news .row {
-	margin: 0%;
-}
-
-#awards .col,
-#news .col {
-	margin: 0%;
-	width: 50%;
-	padding: 50px;
-}
-
-#awards h5,
-#news h5 {
-	text-align: center;
-	color: #fff;
-}
-
-#news .row div {
-	padding: 50px;
-}
 
 /* Team slides */
 
