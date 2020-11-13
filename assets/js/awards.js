@@ -24,18 +24,24 @@ window.onscroll = () => {
 		: navbar.classList.remove('sticky');
 };
 $('.brand-carousel').owlCarousel({
-	loop:true,
-	margin:10,
-	autoplay:true,
-	responsive:{
-	  0:{
-		items:1
-	  },
-	  600:{
-		items:3
-	  },
-	  1000:{
-		items:5
-	  }
+	loop: true,
+	margin: 10,
+	autoplay: 300,
+	smartSpeed: 300,
+	slideSpeed: 300,
+    paginationSpeed: 500,
+    singleItem: true,
+    navigation: true,
+    scrollPerPage: true,
+	responsive: {
+		0: {
+			items: 3
+		},
+		600: {
+			items: 5
+		},
+		1000: {
+			items: 7
+		}
 	}
-  })
+})

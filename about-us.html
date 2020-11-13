@@ -77,7 +77,7 @@
 				We are the company with Global Ambition working Smart to provide clean and safe drinking water to each
 				and every mankind and with our Innovation and Technology we are working for the same.</p>
 
-			<div class="row">
+			<div class="row ">
 				<div class="col-xs-12 col-sm-12 col-md-8
 							
 							col-lg-8 d-flex flex-column justify-content-center about-text">
@@ -118,13 +118,15 @@
 				<hr>
 			</div>
 			<div id="team" class="container">
-				<div class="row">
+				<div class="row d-flex align-items-center justify-content-center">
 					<div class="col">
 						<h1>Enabling Efficient<br>Lifestyle <br><img src="assets/images/responsibly.png"
 								class="responsibly-img" alt="wegot value" title="wegot values"></h1>
 						<p>We at Mineral Drop are proud of the work we are doing and we strongly believe that is because
 							of its people and values.</p>
+						<br><br><br><br>
 					</div>
+
 					<div class="col-md-6 d-flex align-items-center justify-content-center">
 						<div class="card">
 							<div class="card-body">
@@ -259,8 +261,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="what-we-do">
-		<div class="row">
+	<section class="container what-we-do">
+		<div class="row d-flex flex-wrap align-items-center">
 			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
 				<div id="slider">
 					<div id="headerSlider" class="carousel slide" data-ride="carousel" data-interval="3000"
@@ -284,14 +286,6 @@
 									class="d-block img-fluid" />
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -312,12 +306,15 @@
 			</div>
 		</div>
 	</section>
-	<section class="our-clients">
+	<br><br><br><br>
+	<section class=" container our-clients">
 		<h1>Our Clients</h1>
+		<hr>
+		<br><br><br><br>
 		<p>Just having satisfied customers isn’t good enough anymore, we try to create happy & raving Fans.</p>
 	</section>
-
-	<section>
+	<br><br><br><br>
+	<section class="container">
 		<div class="brand-carousel section-padding owl-carousel">
 			<div class="single-logo">
 				<img src="assets/images/amazon.png" alt="">
@@ -359,15 +356,20 @@
 				margin: 10,
 				autoplay: 300,
 				smartSpeed: 300,
+				slideSpeed: 300,
+				paginationSpeed: 500,
+				singleItem: true,
+				navigation: true,
+				scrollPerPage: true,
 				responsive: {
 					0: {
-						items: 1
-					},
-					600: {
 						items: 3
 					},
-					1000: {
+					600: {
 						items: 5
+					},
+					1000: {
+						items: 7
 					}
 				}
 			})
