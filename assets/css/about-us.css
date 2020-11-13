@@ -484,3 +484,29 @@
 #team .carousel-control-next-icon {
 	background-color: black;
 }
+.billion-row {
+	display: inline-block;
+	width: 100%;
+	padding: 200px 0 0;
+}
+
+.billion-row h2 {
+	font-size: 50px;
+	color: #0A4A81;
+	margin: 0;
+	line-height: 28px;
+}
+
+.billion-row img {
+	width: 100%;
+	margin: 0 0 2em 0;
+	height: 100%;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+.billion-row img{
+	width: auto;
+}
+.what-we-do{
+	padding-top: 50px;
+	margin-top: 50px;
+}
