@@ -1076,13 +1076,46 @@ figure.snip1192 .author h5 span {
 		right: 35px;
 	}
 }
-.changing-world h1,small{
+
+.changing-world h1,
+small {
 	color: #2980b9;
 }
-.changing-world p{
+
+.changing-world p {
 	color: #000155;
 }
-.brand-carousel1 .card{
+
+.brand-carousel1 .card {
 	height: 100px;
 	margin: 10px;
+}
+
+.image-grid .image {
+	width: 100%;
+	height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.image-grid .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: rgb(0, 0, 0, 0.7);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.image-grid .container:hover .overlay {
+	opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.image-grid p{
+	font-size: 20px;
 }
