@@ -1076,3 +1076,13 @@ figure.snip1192 .author h5 span {
 		right: 35px;
 	}
 }
+.changing-world h1,small{
+	color: #2980b9;
+}
+.changing-world p{
+	color: #000155;
+}
+.brand-carousel1 .card{
+	height: 100px;
+	margin: 10px;
+}
