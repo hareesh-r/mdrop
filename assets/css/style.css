@@ -646,9 +646,11 @@ h1 {
 	margin-top: 50px;
 	color: inherit;
 }
+
 .form-group {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
+
 .contact-clean .form-group:last-child {
 	margin-bottom: 10px;
 }
@@ -673,6 +675,7 @@ h1 {
 		margin-top: 0px;
 		color: inherit;
 	}
+
 	.contact-clean form .form-control {
 		background: #fff;
 		border-radius: 2px;
@@ -683,6 +686,7 @@ h1 {
 		height: 40px;
 	}
 }
+
 .contact-clean form .form-control:focus {
 	border: 2px solid #b2b2b2;
 }
@@ -918,53 +922,97 @@ h1 {
 	padding: 0px;
 }
 
-.testimonial .container {
-	border: 2px solid #ccc;
-	background-color: #9ad6e6d8;
-	border-radius: 5px;
-	padding: 16px;
-	margin: 16px 0;
-	text-align: left;
-}
-
-/* Clear floats after containers */
-.testimonial .container::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.testimonial .container img {
-	float: left;
-	margin-right: 20px;
-	border-radius: 50%;
-}
-
-/* Increase the font-size of a span element */
-.testimonial .container span {
-	font-size: 20px;
-	margin-right: 15px;
-}
-
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
-	.testimonial .container {
-		text-align: center;
-	}
-
-	.testimonial .container img {
-		margin: auto;
-		float: none;
-		display: block;
-	}
-}
-.story-box{
+.story-box {
 	background: #fff;
 	border-radius: 10px;
 }
+
 .our-awards {
-    background: url(../images/sec-2.png) #3b3b3b no-repeat right top;
-    padding: 50px 0;
-    color: #fff
+	background: url(../images/sec-2.png) #3b3b3b no-repeat right top;
+	padding: 50px 0;
+	color: #fff
+}
+
+/*testimonial card*/
+figure.snip1192 {
+	font-family: 'Raleway', Arial, sans-serif;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 220px;
+	max-width: 310px;
+	width: 100%;
+	color: #333;
+	text-align: center;
+	box-shadow: none !important;
+}
+
+figure.snip1192 * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+figure.snip1192 img {
+	max-width: 100%;
+	height: 100px;
+	width: 100px !important;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	display: inline-block !important;
+	z-index: 1;
+	position: relative;
+}
+
+figure.snip1192 blockquote {
+	margin: 0;
+	display: block;
+	border-radius: 8px;
+	position: relative;
+	background-color: #ccc;
+	padding: 30px 50px 65px 50px;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin: 0 0 -50px;
+	line-height: 1.6em;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1192 blockquote:before,
+figure.snip1192 blockquote:after {
+	font-family: 'FontAwesome';
+	content: "\201C";
+	position: absolute;
+	font-size: 50px;
+	opacity: 0.3;
+	font-style: normal;
+}
+
+figure.snip1192 blockquote:before {
+	top: 35px;
+	left: 20px;
+}
+
+figure.snip1192 blockquote:after {
+	content: "\201D";
+	right: 20px;
+	bottom: 35px;
+}
+
+figure.snip1192 .author {
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+}
+
+figure.snip1192 .author h5 {
+	opacity: 0.8;
+	margin: 0;
+	font-weight: 800;
+}
+
+figure.snip1192 .author h5 span {
+	font-weight: 400;
+	text-transform: none;
+	display: block;
 }
