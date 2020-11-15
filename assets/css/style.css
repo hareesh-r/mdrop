@@ -610,6 +610,7 @@ h1 {
 	}
 }
 
+
 .contact-clean form {
 	max-width: 480px;
 	width: 90%;
@@ -641,12 +642,15 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 28px;
-	margin-bottom: 36px;
+	margin-bottom: 40px;
+	margin-top: 50px;
 	color: inherit;
 }
-
+.form-group {
+    margin-bottom: 40px;
+}
 .contact-clean .form-group:last-child {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .contact-clean form .form-control {
@@ -656,9 +660,29 @@ h1 {
 	outline: none;
 	color: inherit;
 	padding-left: 12px;
-	height: 42px;
+	height: 55px;
 }
 
+@media (max-width: 1024px) {
+	.contact-clean h2 {
+		margin-top: 5px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		font-size: 28px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		color: inherit;
+	}
+	.contact-clean form .form-control {
+		background: #fff;
+		border-radius: 2px;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+		outline: none;
+		color: inherit;
+		padding-left: 12px;
+		height: 40px;
+	}
+}
 .contact-clean form .form-control:focus {
 	border: 2px solid #b2b2b2;
 }
@@ -891,7 +915,7 @@ h1 {
 }
 
 #team h4 {
-	padding: 20px;
+	padding: 0px;
 }
 
 .testimonial .container {
@@ -938,4 +962,9 @@ h1 {
 .story-box{
 	background: #fff;
 	border-radius: 10px;
+}
+.our-awards {
+    background: url(../images/sec-2.png) #3b3b3b no-repeat right top;
+    padding: 50px 0;
+    color: #fff
 }
