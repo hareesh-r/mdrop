@@ -27,6 +27,16 @@
 </head>
 
 <body>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="Products.html">Products</a>
+			<a href="about-us.html">About Us</a>
+			<a href="blog.html">Blog</a>
+			<a href="faq.html">FAQs</a>
+			<a href="gallery.html">Gallery</a>
+		</div>
+	</div>
 	<nav class="navbar">
 		<div class="content">
 			<div class="logo">
@@ -38,16 +48,19 @@
 				</div>
 				<li><a class="homeBtn" href="index.html">Home</a></li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">More
+					<a class="nav-link " href="#" role="button" data-toggle="dropdown" onclick="openNav()">More
 					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="Products.html">Products</a>
-						<a class="dropdown-item" href="about-us.html">About Us</a>
-						<a class="dropdown-item" href="blog.html">Blog</a>
-						<a class="dropdown-item" href="faq.html">FAQs</a>
-						<a class="dropdown-item" href="gallery.html">Gallery</a>
-					</div>
+
 				</li>
+				<script>
+					function openNav() {
+						document.getElementById("myNav").style.width = "100%";
+					}
+
+					function closeNav() {
+						document.getElementById("myNav").style.width = "0%";
+					}
+				</script>
 			</ul>
 			<div class="icon menu-btn">
 				<i class="fas fa-bars"></i>
@@ -91,7 +104,7 @@
 							</div>
 						</div>
 
-						
+
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingTwo">
 								<h4 class="panel-title">
@@ -269,7 +282,7 @@
 							</div>
 						</div>
 
-						
+
 					</div>
 				</div>
 				<!--- END COL -->

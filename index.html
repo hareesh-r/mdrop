@@ -28,11 +28,25 @@
 </head>
 
 <body>
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="Products.html">Products</a>
+			<a href="about-us.html">About Us</a>
+			<a href="blog.html">Blog</a>
+			<a href="faq.html">FAQs</a>
+			<a href="gallery.html">Gallery</a>
+		</div>
+	</div>
+
+
 	<nav class="navbar">
 		<div class="content">
 			<div class="logo">
 				<a href="index.html"><img src="assets/images/logo.jfif" alt="Mineral Drop Logo" id="logo" /></a>
 			</div>
+
 			<ul class="menu-list">
 				<div class="icon cancel-btn">
 					<i class="fas fa-times"></i>
@@ -42,21 +56,25 @@
 				<li><a class="productsBtn" href="#products">Products</a></li>
 				<li><a class="aboutBtn" href="#about">About</a></li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">More
+					<a class="nav-link " href="#" role="button" data-toggle="dropdown" onclick="openNav()">More
 					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="Products.html">Products</a>
-						<a class="dropdown-item" href="about-us.html">About Us</a>
-						<a class="dropdown-item" href="blog.html">Blog</a>
-						<a class="dropdown-item" href="faq.html">FAQs</a>
-						<a class="dropdown-item" href="gallery.html">Gallery</a>
-					</div>
+
 				</li>
 			</ul>
+
 			<div class="icon menu-btn">
 				<i class="fas fa-bars"></i>
 			</div>
 		</div>
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
 	</nav>
 	<div id="home">
 		<section class="home-hero-stack">
@@ -277,104 +295,81 @@
 				demo</button></a><br /><br />
 	</section>
 	<section class="container-fluid testimonial">
-		<!--
-		<span class="display-4">Testimonials</span>
-		<div class="container">
-			<img src="assets/images/loksatta.gif" alt="loksatta" style="width:90px">
-			<p><span>Loksatta</span>keep Mineral Drop Water purifier in your Pocket , one of the best and smallest water
-				purifier </p>
-		</div>
-		<div class="container">
-			<img src="assets/images/sakal.jpeg" alt="sakal" style="width:90px">
-			<p><span>Sakal</span>Innovative Water purifier Launched by Nadeem khan to provide clean and safe drinking
-				water to under-privileged </p>
-		</div>
-		<div class="container">
-			<img src="assets/images/lokmat.png" alt="lokmat" style="width:90px">
-			<p><span>Lokmat</span>Smallest and Most affordable water purifier at just Rs 200
-				Tv9: Mineral Drop launches Water purifier with purity in your pocket
-			</p>
-		</div>
-		<div class="container">
-			<img src="assets/images/logo-3.jpeg" alt="zee" style="width:90px">
-			<p><span>ZeeNews</span>Youth launches Disruptive water purifier for below poverty lines </p>
-		</div>
-		<div class="container">
-			<img src="assets/images/hitvad.png" alt="hitvad" style="width:90px">
-			<p><span>Hitvad</span>Dr.Alkaline bottle is innovative alkaline water bottle for health consciousness people
-			</p>
-		</div>
-		<div class="container">
-			<img src="assets/images/toi.png" alt="Times Of India" style="width:90px">
-			<p><span>Times Of India</span> Jugad by Indian Mineral Drop providing Healthy and Safe water </p>
-		</div>
-	-->
-		<div class="brand-carousel section-padding owl-carousel">
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Keep Mineral Drop Water purifier in your Pocket , one of the best and smallest water
-						purifier </blockquote>
-					<div class="author">
-						<img src="assets/images/loksatta.png" alt="Loksatta" />
-						<h5>Loksatta<span> Newspaper</span></h5>
+		<h1>Testimonial</h1>
+		<div class="row">
+			<div class="col-lg-1 col-md-1 col-sm-1"></div>
+			<div class="col-lg-11 col-md-11 col-sm-11">
+				<div class="brand-carousel section-padding owl-carousel">
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Keep Mineral Drop Water purifier in your Pocket , one of the best and smallest
+								water
+								purifier </blockquote>
+							<div class="author">
+								<img src="assets/images/loksatta.png" alt="Loksatta" />
+								<h5>Loksatta<span> Newspaper</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Innovative Water purifier Launched by Nadeem khan to provide clean and safe drinking
-						water to under-privileged</blockquote>
-					<div class="author">
-						<img src="assets/images/sakal.jpeg" alt="Sakal" />
-						<h5>Sakal <span> Newspaper</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Innovative Water purifier Launched by Nadeem khan to provide clean and safe
+								drinking
+								water to under-privileged</blockquote>
+							<div class="author">
+								<img src="assets/images/sakal.jpeg" alt="Sakal" />
+								<h5>Sakal <span> Newspaper</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Smallest and Most affordable water purifier at just Rs 200</blockquote>
-					<div class="author">
-						<img src="assets/images/lokmat.png" alt="lokmat.png" />
-						<h5>Lokmat<span> Newspaper</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Smallest and Most affordable water purifier at just Rs 200</blockquote>
+							<div class="author">
+								<img src="assets/images/lokmat.png" alt="lokmat.png" />
+								<h5>Lokmat<span> Newspaper</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Mineral Drop launches Water purifier with purity in your pocket</blockquote>
-					<div class="author">
-						<img src="assets/images/tv9.png" alt="tv9.png" />
-						<h5>TV9<span>Television network</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Mineral Drop launches Water purifier with purity in your pocket</blockquote>
+							<div class="author">
+								<img src="assets/images/tv9.png" alt="tv9.png" />
+								<h5>TV9<span>Television network</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Youth launches Disruptive water purifier for below poverty lines</blockquote>
-					<div class="author">
-						<img src="assets/images/logo-3.jpeg" alt="Loksatta" />
-						<h5>Zee News<span>Television network</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Youth launches Disruptive water purifier for below poverty lines</blockquote>
+							<div class="author">
+								<img src="assets/images/logo-3.jpeg" alt="Loksatta" />
+								<h5>Zee News<span>Television network</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Dr.Alkaline bottle is innovative alkaline water bottle for health consciousness people
-					</blockquote>
-					<div class="author">
-						<img src="assets/images/hitvad.png" alt="sq-sample1" />
-						<h5>Hitvad<span> Newspaper</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Dr.Alkaline bottle is innovative alkaline water bottle for health consciousness
+								people
+							</blockquote>
+							<div class="author">
+								<img src="assets/images/hitvad.png" alt="sq-sample1" />
+								<h5>Hitvad<span> Newspaper</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
-			</div>
-			<div class="single-logo">
-				<figure class="snip1192">
-					<blockquote>Desi Jugad by Indian Mineral Drop providing Healthy and Safe water </blockquote>
-					<div class="author">
-						<img src="assets/images/toi.png" alt="sq-sample1" />
-						<h5>Times Of India<span> Newspaper</span></h5>
+					<div class="single-logo">
+						<figure class="snip1192">
+							<blockquote>Desi Jugad by Indian Mineral Drop providing Healthy and Safe water </blockquote>
+							<div class="author">
+								<img src="assets/images/toi.png" alt="sq-sample1" />
+								<h5>Times Of India<span> Newspaper</span></h5>
+							</div>
+						</figure>
 					</div>
-				</figure>
+				</div>
 			</div>
 		</div>
 		<script src="assets/js/jquery-3.2.1.min.js"></script>
@@ -422,47 +417,7 @@
 	</div>
 	<section id="team">
 		<div class="container-fluid">
-			<br><br><br><br><br>
-			<!--<div class="brand-carousel section-padding owl-carousel">
-					<div class="single-logo">
-						<img src="assets/images/logo-1.png" alt="">
-					</div>
-					<div class="single-logo">
-						<img src="assets/images/logo-2.png" alt="">
-					</div>
-					<div class="single-logo">
-						<img src="assets/images/logo-33.jpeg" alt="">
-					</div>
-					<div class="single-logo">
-						<img src="assets/images/logo-4.jpeg" alt="">
-					</div>
-					<div class="single-logo">
-						<img src="assets/images/logo-5.jpeg" alt="">
-					</div>
-					<div class="single-logo">
-						<img src="assets/images/logo-6.jpeg" alt="">
-					</div>
-				</div>
-				<script src="assets/js/jquery-3.2.1.min.js"></script>
-				<script src="assets/js/owl.carousel.js"></script>
-				<script>
-					$('.brand-carousel').owlCarousel({
-						loop: true,
-						margin: 10,
-						autoplay: false, 
-						responsive: {
-							0: {
-								items: 6
-							},
-							600: {
-								items: 6
-							},
-							1000: {
-								items: 6
-							}
-						}
-					})
-				</script>-->
+			<br><br><br>
 			<section class="reviews">
 				<div class="container-fluid">
 					<div class="row">
@@ -474,12 +429,12 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
 							<div
 								class="container story-box  d-flex flex-wrap align-items-center flex-column justify-content-center">
-								<h4 id="sequence"
+								<h5 id="sequence"
 									class=" d-flex flex-wrap align-items-center flex-column justify-content-center">
 
-								</h4>
+								</h5>
 								<script>
-									var example = ['<strong><em>I was facing the problem of acidity as I used to travel multiple places but after using this product my all problems are solved, I have tried Mineral Drop in Wardha,Ahmedabad,Bhandara and had recommended my friends-</strong></em> <h5> Preeti Gajbhiye</h5>', '<strong><em>Very loving product and affordable , Ihave donated it to my orphanage</strong></em>- <h5> Suraj agroya</h5> ', '<strong><em>It is really a Good product and portable can be used anywhere, It really works great</strong></em>- <h5> Shazia Khan</h5>'];
+									var example = ['<strong><em>I was facing the problem of acidity as I used to travel multiple places but after using this product my all problems are solved, I have tried Mineral Drop in Wardha,Ahmedabad,Bhandara and had recommended my friends-</strong></em> <p> Preeti Gajbhiye</p>', '<strong><em>Very loving product and affordable , Ihave donated it to my orphanage</strong></em>- <p> Suraj agroya</p> ', '<strong><em>It is really a Good product and portable can be used anywhere, It really works great</strong></em>- <p> Shazia Khan</p>'];
 
 									textSequence(0);
 									function textSequence(i) {
