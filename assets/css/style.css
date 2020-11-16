@@ -1139,3 +1139,17 @@ small {
 	top: 0%;
 	z-index: inherit;
 }
+blockquote:before{
+    font-family: 'FontAwesome';
+    content: "\201C";
+    font-size: 70px;
+    opacity: 0.5;
+    font-style: normal;
+}
+blockquote:after {
+    font-family: 'FontAwesome';
+    content: "\201D";
+    font-size: 70px;
+    opacity: 0.5;
+	font-style: normal;
+}
