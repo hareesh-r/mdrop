@@ -1093,29 +1093,47 @@ small {
 
 .image-grid .image {
 	width: 100%;
-	height: auto;
+	min-height: 100%;
 }
 
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.image-grid .overlay {
+
+.image-grid p {
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .3s ease;
-	background-color: rgb(0, 0, 0, 0.7);
+	font-size: 150%;
+	top: 45%;
+	left: 35%;
+	text-align: center;
+	color: #fff;
+	background-color: rgb(0, 0, 0, 0.3);
+
 }
 
-/* When you mouse over the container, fade in the overlay icon*/
-.image-grid .container:hover .overlay {
-	opacity: 1;
+.image-grid .col-sm-4,
+.image-grid .col-md-4,
+.image-grid .col-lg-4 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
 }
 
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
-.image-grid p{
-	font-size: 20px;
+.image-grid .row {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.image-grid .row img {
+	padding: 0px !important;
+}
+
+#team .carousel {
+	margin-top: 50px;
+}
+
+#team .carousel-inner {
+	height: 500px;
+}
+
+#team .carousel-caption {
+	color: #000;
+	top: 0%;
+	z-index: inherit;
 }
