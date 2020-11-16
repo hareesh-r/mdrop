@@ -1086,9 +1086,11 @@ small {
 	color: #000155;
 }
 
+
 .brand-carousel1 .card {
 	height: 100px;
 	margin: 10px;
+	border: 0px;
 }
 
 .image-grid .image {
