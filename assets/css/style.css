@@ -121,7 +121,7 @@ strong {
 	padding: 25px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 450px) {
 	#why-us .row img {
 		display: none;
 	}
@@ -1151,5 +1151,4 @@ blockquote:after {
     content: "\201D";
     font-size: 70px;
     opacity: 0.5;
-	font-style: normal;
 }
