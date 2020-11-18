@@ -276,11 +276,6 @@ section.home-hero-stack {
 	z-index: 0;
 }
 
-.dark-text {
-	font-weight: 1000;
-	font-size: 500;
-}
-
 .hhs--video-cell {
 	position: absolute;
 	left: 0;
@@ -288,12 +283,11 @@ section.home-hero-stack {
 	width: 100%;
 	height: 100%;
 }
-
 .hhs--text-wrap {
 	position: absolute;
 	top: 48vh;
 	left: 0;
-	color: #fff;
+	color: #eee;
 	width: 100%;
 	transform: translateY(-50%);
 	z-index: 1;
@@ -1151,4 +1145,8 @@ blockquote:after {
     content: "\201D";
     font-size: 70px;
     opacity: 0.5;
+}
+.dark-text {
+	font-weight: 1000;
+	font-size: 500;
 }
